@@ -1,6 +1,15 @@
+//
+//  ViewController.swift
+//  iHangmanApp
+//
+//  Created by Rodrigo on 01/10/25.
+//
+
+import UIKit
+
 // MARK: - Main View Controller
-class HangmanViewController: UIViewController {
-    private let game = HangmanGame()
+class IHangmanViewController: UIViewController {
+    private let game = IHangmanGame()
     
     // UI Components
     private let titleLabel: UILabel = {
@@ -202,8 +211,8 @@ class HangmanViewController: UIViewController {
     
     private func showGameOverAlert() {
         let title = game.isGameWon ? "Parabéns! 🎉" : "Game Over 😔"
-        let message = game.isGameWon 
-            ? "Você acertou a palavra!" 
+        let message = game.isGameWon
+            ? "Você acertou a palavra!"
             : "A palavra era: \(game.currentWord)"
         
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
