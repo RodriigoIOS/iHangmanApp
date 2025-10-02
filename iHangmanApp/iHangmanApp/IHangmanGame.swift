@@ -1,5 +1,12 @@
+//
+//  IHangmanGame.swift
+//  iHangmanApp
+//
+//  Created by Rodrigo on 01/10/25.
+//
+
 // MARK: - Game Model
-class HangmanGame {
+class IHangmanGame {
     private let words = [
         "PALMEIRAS", "FLAMENGO", "CORINTHIANS", "SAO PAULO",
         "SANTOS", "VASCO", "CRUZEIRO", "ATLETICO MINEIRO",
