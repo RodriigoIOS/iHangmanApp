@@ -17,7 +17,7 @@ class IHangmanViewController: UIViewController {
         label.text = "iRangman ⚽️"
         label.font = .systemFont(ofSize: 36, weight: .bold)
         label.textAlignment = .center
-        label.textColor = .systemGreen
+        label.textColor = .systemBlue
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
