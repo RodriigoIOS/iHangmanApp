@@ -7,12 +7,7 @@
 
 // MARK: - Game Model
 class IHangmanGame {
-    private let words = [
-        "PALMEIRAS", "FLAMENGO", "CORINTHIANS", "SAO PAULO",
-        "SANTOS", "VASCO", "CRUZEIRO", "ATLETICO MINEIRO",
-        "GREMIO", "INTERNACIONAL", "BOTAFOGO", "FLUMINENSE",
-        "NEYMAR", "PELE", "ROMARIO", "RONALDO", "RIVALDO"
-    ]
+    private let wordManager = WordManager.shared
     
     private(set) var currentWord: String = ""
     private(set) var guessedLetters: Set<Character> = []
@@ -32,9 +27,24 @@ class IHangmanGame {
     }
     
     func startNewGame() {
-        currentWord = words.randomElement() ?? "PALMEIRAS"
+        currentWord = wordManager.getRandomWord()
         guessedLetters.removeAll()
         wrongGuesses = 0
+    }
+    
+    func startNewGame(category: String) {
+        wordManager.setCurrentCategory(category)
+        currentWord = wordManager.getRandomWord()
+        guessedLetters.removeAll()
+        wrongGuesses = 0
+    }
+    
+    func getCurrentCategory() -> WordCategory? {
+        return wordManager.getCurrentCategory()
+    }
+    
+    func getAllCategories() -> [WordCategory] {
+        return wordManager.getAllCategories()
     }
     
     func guessLetter(_ letter: Character) -> Bool {
