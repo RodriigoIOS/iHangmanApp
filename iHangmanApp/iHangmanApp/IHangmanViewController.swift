@@ -14,10 +14,19 @@ class IHangmanViewController: UIViewController {
     // UI Components
     private let titleLabel: UILabel = {
         let label = UILabel()
-        label.text = "iRangman ⚽️"
+        label.text = "iHangman"
         label.font = .systemFont(ofSize: 36, weight: .bold)
         label.textAlignment = .center
-        label.textColor = .systemGreen
+        label.textColor = .systemBlue
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    private let categoryLabel: UILabel = {
+        let label = UILabel()
+        label.font = .systemFont(ofSize: 16, weight: .medium)
+        label.textAlignment = .center
+        label.textColor = .secondaryLabel
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -64,6 +73,17 @@ class IHangmanViewController: UIViewController {
         return button
     }()
     
+    private let homeButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("🏠 Início", for: .normal)
+        button.titleLabel?.font = .systemFont(ofSize: 16, weight: .medium)
+        button.backgroundColor = .systemGray5
+        button.setTitleColor(.systemBlue, for: .normal)
+        button.layer.cornerRadius = 8
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
     private var letterButtons: [UIButton] = []
     
     // MARK: - Lifecycle
@@ -79,17 +99,22 @@ class IHangmanViewController: UIViewController {
         view.backgroundColor = .systemBackground
         
         view.addSubview(titleLabel)
+        view.addSubview(categoryLabel)
         view.addSubview(hangmanImageView)
         view.addSubview(wordLabel)
         view.addSubview(statusLabel)
         view.addSubview(keyboardContainer)
         view.addSubview(newGameButton)
+        view.addSubview(homeButton)
         
         NSLayoutConstraint.activate([
             titleLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
             titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             
-            hangmanImageView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20),
+            categoryLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 5),
+            categoryLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            
+            hangmanImageView.topAnchor.constraint(equalTo: categoryLabel.bottomAnchor, constant: 20),
             hangmanImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             hangmanImageView.widthAnchor.constraint(equalToConstant: 150),
             hangmanImageView.heightAnchor.constraint(equalToConstant: 150),
@@ -109,11 +134,17 @@ class IHangmanViewController: UIViewController {
             newGameButton.topAnchor.constraint(equalTo: keyboardContainer.bottomAnchor, constant: 20),
             newGameButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             newGameButton.widthAnchor.constraint(equalToConstant: 200),
-            newGameButton.heightAnchor.constraint(equalToConstant: 50)
+            newGameButton.heightAnchor.constraint(equalToConstant: 50),
+            
+            homeButton.topAnchor.constraint(equalTo: newGameButton.bottomAnchor, constant: 10),
+            homeButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            homeButton.widthAnchor.constraint(equalToConstant: 120),
+            homeButton.heightAnchor.constraint(equalToConstant: 40)
         ])
         
         setupKeyboard()
         newGameButton.addTarget(self, action: #selector(startNewGame), for: .touchUpInside)
+        homeButton.addTarget(self, action: #selector(goHome), for: .touchUpInside)
     }
     
     private func setupKeyboard() {
@@ -186,11 +217,24 @@ class IHangmanViewController: UIViewController {
         updateUI()
     }
     
+    @objc private func goHome() {
+        dismiss(animated: true)
+    }
+    
     // MARK: - UI Updates
     private func updateUI() {
         wordLabel.text = game.displayWord
         statusLabel.text = "Erros: \(game.wrongGuesses)/\(game.maxWrongGuesses)"
+        updateCategoryLabel()
         updateHangmanImage()
+    }
+    
+    private func updateCategoryLabel() {
+        if let category = game.getCurrentCategory() {
+            categoryLabel.text = "\(category.icone) \(category.nome)"
+        } else {
+            categoryLabel.text = "Categoria não selecionada"
+        }
     }
     
     private func updateHangmanImage() {

@@ -13,6 +13,11 @@
 		5BC07EAD2E8DF9EB00B3B68B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BC07EAC2E8DF9EB00B3B68B /* Assets.xcassets */; };
 		5BC07EB02E8DF9EB00B3B68B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BC07EAE2E8DF9EB00B3B68B /* LaunchScreen.storyboard */; };
 		5BC07EB82E8DFAF500B3B68B /* IHangmanGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC07EB72E8DFAF500B3B68B /* IHangmanGame.swift */; };
+		5BC07EB92E8DFB0000B3B68B /* WordCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC07EB82E8DFB0000B3B68B /* WordCategory.swift */; };
+		5BC07EBA2E8DFB0100B3B68B /* WordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC07EB92E8DFB0100B3B68B /* WordManager.swift */; };
+		5BC07EBB2E8DFB0200B3B68B /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = 5BC07EBA2E8DFB0200B3B68B /* words.json */; };
+		5BC07EBC2E8DFB0300B3B68B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC07EBB2E8DFB0300B3B68B /* HomeViewController.swift */; };
+		5BC07EBD2E8DFB0400B3B68B /* CategorySelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC07EBC2E8DFB0400B3B68B /* CategorySelectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		5BC07EAF2E8DF9EB00B3B68B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BC07EB12E8DF9EB00B3B68B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BC07EB72E8DFAF500B3B68B /* IHangmanGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IHangmanGame.swift; sourceTree = "<group>"; };
+		5BC07EB82E8DFB0000B3B68B /* WordCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCategory.swift; sourceTree = "<group>"; };
+		5BC07EB92E8DFB0100B3B68B /* WordManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordManager.swift; sourceTree = "<group>"; };
+		5BC07EBA2E8DFB0200B3B68B /* words.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = words.json; sourceTree = "<group>"; };
+		5BC07EBB2E8DFB0300B3B68B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5BC07EBC2E8DFB0400B3B68B /* CategorySelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySelectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +68,13 @@
 			children = (
 				5BC07EA32E8DF9E900B3B68B /* AppDelegate.swift */,
 				5BC07EA52E8DF9E900B3B68B /* SceneDelegate.swift */,
+				5BC07EBB2E8DFB0300B3B68B /* HomeViewController.swift */,
+				5BC07EBC2E8DFB0400B3B68B /* CategorySelectionViewController.swift */,
 				5BC07EA72E8DF9E900B3B68B /* IHangmanViewController.swift */,
 				5BC07EB72E8DFAF500B3B68B /* IHangmanGame.swift */,
+				5BC07EB82E8DFB0000B3B68B /* WordCategory.swift */,
+				5BC07EB92E8DFB0100B3B68B /* WordManager.swift */,
+				5BC07EBA2E8DFB0200B3B68B /* words.json */,
 				5BC07EAC2E8DF9EB00B3B68B /* Assets.xcassets */,
 				5BC07EAE2E8DF9EB00B3B68B /* LaunchScreen.storyboard */,
 				5BC07EB12E8DF9EB00B3B68B /* Info.plist */,
@@ -127,6 +142,7 @@
 			files = (
 				5BC07EB02E8DF9EB00B3B68B /* LaunchScreen.storyboard in Resources */,
 				5BC07EAD2E8DF9EB00B3B68B /* Assets.xcassets in Resources */,
+				5BC07EBB2E8DFB0200B3B68B /* words.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +156,11 @@
 				5BC07EA82E8DF9E900B3B68B /* IHangmanViewController.swift in Sources */,
 				5BC07EA42E8DF9E900B3B68B /* AppDelegate.swift in Sources */,
 				5BC07EB82E8DFAF500B3B68B /* IHangmanGame.swift in Sources */,
+				5BC07EB92E8DFB0000B3B68B /* WordCategory.swift in Sources */,
+				5BC07EBA2E8DFB0100B3B68B /* WordManager.swift in Sources */,
 				5BC07EA62E8DF9E900B3B68B /* SceneDelegate.swift in Sources */,
+				5BC07EBC2E8DFB0300B3B68B /* HomeViewController.swift in Sources */,
+				5BC07EBD2E8DFB0400B3B68B /* CategorySelectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

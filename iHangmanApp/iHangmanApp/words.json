@@ -1,0 +1,95 @@
+{
+  "categorias": [
+    {
+      "nome": "Futebol Brasileiro",
+      "icone": "⚽️",
+      "palavras": [
+        "PALMEIRAS", "FLAMENGO", "CORINTHIANS", "SAO PAULO", "SANTOS", "VASCO", 
+        "CRUZEIRO", "ATLETICO MINEIRO", "GREMIO", "INTERNACIONAL", "BOTAFOGO", 
+        "FLUMINENSE", "BAHIA", "SPORT", "CEARA", "FORTALEZA", "ATLETICO PARANAENSE",
+        "NEYMAR", "PELE", "ROMARIO", "RONALDO", "RIVALDO", "RONALDINHO", "KAKA",
+        "CAFU", "ROBERTO CARLOS", "ZICO", "GARRINCHA", "TAFFAREL", "BEBETO"
+      ]
+    },
+    {
+      "nome": "Animais",
+      "icone": "🐾",
+      "palavras": [
+        "ELEFANTE", "GIRAFA", "TIGRE", "LEAO", "ZEBRA", "HIPOPOTAMO", "RINOCERONTE",
+        "MACACO", "GORILA", "CHIMPANZE", "ORANGOTANGO", "PANDA", "URSO", "LOBO",
+        "RAPOSA", "COELHO", "ESQUILO", "CASTOR", "LONTRA", "FOCA", "BALEIA",
+        "GOLFINHO", "TUBARAO", "POLVO", "LULA", "CARANGUEJO", "LAGOSTA", "PINGUIM",
+        "FLAMINGO", "PAPAGAIO", "TUCANO", "AGUIA", "FALCAO", "CORUJA", "BEIJA-FLOR"
+      ]
+    },
+    {
+      "nome": "Países",
+      "icone": "🌍",
+      "palavras": [
+        "BRASIL", "ARGENTINA", "CHILE", "URUGUAI", "PARAGUAI", "COLOMBIA", "VENEZUELA",
+        "PERU", "BOLIVIA", "EQUADOR", "FRANCA", "ESPANHA", "ITALIA", "ALEMANHA",
+        "PORTUGAL", "INGLATERRA", "HOLANDA", "BELGICA", "SUICA", "AUSTRIA", "SUECIA",
+        "NORUEGA", "DINAMARCA", "FINLANDIA", "RUSSIA", "CHINA", "JAPAO", "COREIA",
+        "INDIA", "TAILANDIA", "VIETNA", "INDONESIA", "AUSTRALIA", "CANADA", "MEXICO"
+      ]
+    },
+    {
+      "nome": "Comidas",
+      "icone": "🍕",
+      "palavras": [
+        "PIZZA", "HAMBURGUER", "BATATA FRITA", "SORVETE", "CHOCOLATE", "BOLO",
+        "TORTA", "BRIGADEIRO", "BEIJINHO", "PUDIM", "MOUSSE", "GELATINA", "PIPOCA",
+        "CACHORRO QUENTE", "SANDUICHE", "LASANHA", "MACARRAO", "RISOTO", "SUSHI",
+        "TEMPURA", "CHURRASCO", "FEIJOADA", "MOQUECA", "ACARAJE", "COXINHA",
+        "PASTEL", "EMPADA", "QUICHE", "CREPE", "WAFFLE", "PANQUECA", "TAPIOCA",
+        "ACAI", "VITAMINA", "SUCO", "REFRIGERANTE", "CAFE", "CHA", "CAPPUCCINO"
+      ]
+    },
+    {
+      "nome": "Profissões",
+      "icone": "👨‍💼",
+      "palavras": [
+        "MEDICO", "ENFERMEIRO", "DENTISTA", "VETERINARIO", "PROFESSOR", "ADVOGADO",
+        "ENGENHEIRO", "ARQUITETO", "DESIGNER", "PROGRAMADOR", "JORNALISTA", "FOTOGRAFO",
+        "COZINHEIRO", "GARCOM", "VENDEDOR", "GERENTE", "CONTADOR", "SECRETARIO",
+        "POLICIAL", "BOMBEIRO", "PILOTO", "MOTORISTA", "MECANICO", "ELETRICISTA",
+        "ENCANADOR", "PINTOR", "PEDREIRO", "CARPINTEIRO", "JARDINEIRO", "FAXINEIRO",
+        "SEGURANCA", "PORTEIRO", "RECEPCIONISTA", "TELEFONISTA", "BANCARIO", "CORRETOR"
+      ]
+    },
+    {
+      "nome": "Cores",
+      "icone": "🎨",
+      "palavras": [
+        "VERMELHO", "AZUL", "AMARELO", "VERDE", "LARANJA", "ROXO", "ROSA", "MARROM",
+        "PRETO", "BRANCO", "CINZA", "DOURADO", "PRATEADO", "BRONZE", "BEGE", "CREME",
+        "TURQUESA", "MAGENTA", "CIANO", "LIME", "OLIVA", "NAVY", "CORAL", "SALMON",
+        "VIOLETA", "INDIGO", "ESCARLATE", "CARMESIM", "BORGONHA", "VINHO", "MOSTARDA",
+        "OCRE", "SEPIA", "AQUA", "TEAL", "LAVANDA", "PEROLA", "MARFIM", "EBANO"
+      ]
+    },
+    {
+      "nome": "Objetos da Casa",
+      "icone": "🏠",
+      "palavras": [
+        "TELEVISAO", "GELADEIRA", "FOGAO", "MICROONDAS", "LIQUIDIFICADOR", "BATEDEIRA",
+        "CAFETEIRA", "TORRADEIRA", "ASPIRADOR", "FERRO", "SECADOR", "VENTILADOR",
+        "AR CONDICIONADO", "AQUECEDOR", "LAMPADA", "LUSTRE", "ABAJUR", "CORTINA",
+        "TAPETE", "ALMOFADA", "COBERTOR", "TRAVESSEIRO", "LENCOL", "TOALHA", "ESPELHO",
+        "QUADRO", "VASO", "PLANTA", "FLORES", "RELOGIO", "CALENDARIO", "AGENDA",
+        "LIVRO", "REVISTA", "JORNAL", "CONTROLE REMOTO", "TELEFONE", "COMPUTADOR"
+      ]
+    },
+    {
+      "nome": "Transportes",
+      "icone": "🚗",
+      "palavras": [
+        "CARRO", "MOTO", "BICICLETA", "ONIBUS", "CAMINHAO", "VAN", "TAXI", "UBER",
+        "METRO", "TREM", "AVIAO", "HELICOPTERO", "BARCO", "NAVIO", "IATE", "LANCHA",
+        "CANOA", "JANGADA", "SUBMARINO", "FOGUETE", "ESPACONAVE", "PATINETE", "SKATE",
+        "PATINS", "CARROCA", "CHARRETE", "TRATOR", "ESCAVADEIRA", "GUINDASTE",
+        "AMBULANCIA", "BOMBEIRO", "POLICIA", "CORREIOS", "LIXO", "MUDANCA", "REBOQUE"
+      ]
+    }
+  ]
+}
